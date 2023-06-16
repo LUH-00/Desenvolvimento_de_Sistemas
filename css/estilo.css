@@ -1,0 +1,15 @@
+body{font-family: verdana; background-color: rgb(140, 250, 213);}
+
+h1{text-align: center;}
+
+section{width: 400px;}
+
+/*FORMATANDO O BLOCO 1 */
+.bloco1 p{color: blueviolet;}/*formatando dotas a tegs p dentro da classe 'bloco1'*/
+.bloco1 > p{text-decoration:line-through;text-align: end;} /*esse seletor >_P ira
+selecionar todas as filhas diretas da tag mãe*/
+.bloco1 {border-width: 2px; border-color:red; border-style:solid}
+/*.bloco1 {border:2px red solid } */
+
+/*FORMATANDO O BLOCO 2*/
+.bloco2{border: 2px solid green}
