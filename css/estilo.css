@@ -8,8 +8,15 @@ section{width: 400px;}
 .bloco1 p{color: blueviolet;}/*formatando dotas a tegs p dentro da classe 'bloco1'*/
 .bloco1 > p{text-decoration:line-through;text-align: end;} /*esse seletor >_P ira
 selecionar todas as filhas diretas da tag mãe*/
-.bloco1 {border-width: 2px; border-color:red; border-style:solid}
+.bloco1 {border-width: 2px; border-color:red; border-style:solid; margin: 50px 100px;} /*quando colocamos  2 valores no margin, o 1 valor 
+afetar a top e bottom. O 2 valor irá afetar left e right*/
 /*.bloco1 {border:2px red solid } */
 
+.bloco1{border: 10px red solid; box-sizing: border-box;}
+
 /*FORMATANDO O BLOCO 2*/
-.bloco2{border: 2px solid green}
+.bloco2{border: 2px solid green; margin-top: 20px; margin-left: 100px; padding: 40px;}
+
+.bloco2{border: 2px solid green; padding: 40px; box-sizing: border-box;} /*boz-sizing : border-box irá alterar
+o comportamento padrão do dimisionamento do elemento HTML. De forme que quando aplicado vorder e pedding, a estruutura
+não ira expandir, mas ficará com o mesmo tamanho, só que calculado*/
