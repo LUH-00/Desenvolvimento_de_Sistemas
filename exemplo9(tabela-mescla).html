@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tabela-mesclado.css">
+    <title>Tralhando com Tabelas</title>
+</head>
+<body>
+    <hr>
+    <h1>Contatos</h1>
+    <hr>
+
+    <table>
+        <!-- thead é uma tag que define o cabeçalho da tabela -->
+        <thead>
+            <tr> <!-- A tag tr define uma linha da tabela -->
+                <th>Nome</th> <!-- A tag th define uma coluna de cabaçalho-->
+            
+                <th colspan="2">E-mail</th> <!--colspan trabalha com mesclagem de coluna-->
+                
+            </tr>
+        </thead>
+    <tbody>
+        <!-- linha 1 -->
+        <tr>
+            <td rowspan="2">José</td>   <!--rowpan trabalha com mesclagem de linha -->
+            <td>E-mail_1</td>                       
+            <td>E-mail_2</td>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <td>E-mail_3</td>
+            <td>E-mail_4</td>
+        </tr>
+        <!-- linha 3  -->
+        <tr>
+            <td rowspan="2">Maria</td>
+            <td>E-mail_5</td>
+            <td>E-mail_6</td>
+        </tr>
+         <!-- linha 4 -->
+         <tr>
+            
+            <td>E-mail_7</td>
+            <td>E-mail_8</td>
+        </tr>
+
+
+    </tbody>
+
+       
+
+
+</body>
+</html>
