@@ -1,0 +1,13 @@
+h1{color: black; font-family: helvetica; text-align: center;}
+
+table, tr, th, td{
+    border: 1px solid rgb(47, 26, 138); 
+    border-collapse: collapse; 
+    padding: 10px;
+    margin:10px auto;
+}
+
+
+th{background-color: green;}
+tbody > tr:nth-child(5){background-color: chartreuse;}
+tbody > tr:nth-child(7), tbody > tr:nth-child(9), tbody > tr:nth-child(1), tbody > tr:nth-child(3){background-color: olive;}
