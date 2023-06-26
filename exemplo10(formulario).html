@@ -9,11 +9,12 @@
 </head>
 <body>
     <h1>Formulário com HTML e CSS</h1>
-    <form action="#"method="get">
+    <form action="#"method="get" enctype="multipart/form-data">
         <fieldset>
             <legend>Cadastro</legend>
             <label for="nome">Seu nome</label>
-    <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" maxlength=""><br>  <!--maxlength é utilizado para mostra a quantidade de letra -->
+    <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" minlength="5" maxlength="10" required><br>  <!--maxlength é utilizado para mostra a quantidade de letra -->
+    <!-- required pede para o usuario preecher o campo obrigatório -->
 
     <label for="senha">Sua senha</label>
     <input type="password" name="senha" id="senha"   placeholder="Insira sua senha"> <!--placeholder é utilizado para instruir o usuario-->
@@ -70,6 +71,20 @@
 
 
 
+        </fieldset>
+        
+        <fieldset>
+            <legend>Outros campos de formulário</legend>
+
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade em anos">
+                <!-- input: number serve para colocar no campo sor numero -->
+            <input type="date" name="nascimento" id="nacimento">
+            <!-- input:date serve para poder colocar a data de nacimento etc -->
+
+            <input type="range" name="volume" id="volume" min="1" max="10">
+            <!-- input:range determina um padrão de intervalo -->
+            <input type="color" name="cor" id="cor">
+            <!-- input:color serve para mudar a cor de fundo da tela atc -->
         </fieldset>
         
     
